@@ -1,0 +1,101 @@
+.taskcontainer {
+  padding: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.header,
+.taskitem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.header {
+  font-weight: bold;
+  background-color: #e9ecef;
+  position: sticky;
+  top: 0;
+}
+
+.taskitem {
+  background-color: #ffffff;
+}
+
+.header span,
+.taskitem span {
+  display: inline-block;
+  text-align: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  min-width: 100px; /* Ensure columns have a minimum width */
+}
+
+.header span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header span:nth-child(1),
+.taskitem span:nth-child(1) {
+  width: 5%; /* Adjust width for column alignment */
+}
+
+.header span:nth-child(2),
+.taskitem span:nth-child(2) {
+  width: 30%; /* Adjust width for column alignment */
+}
+
+.header span:nth-child(3),
+.taskitem span:nth-child(3) {
+  width: 20%; /* Adjust width for column alignment */
+}
+
+.header span:nth-child(4),
+.taskitem span:nth-child(4) {
+  width: 20%; /* Adjust width for column alignment */
+}
+
+.header span:nth-child(5),
+.taskitem span:nth-child(5) {
+  width: 10%; /* Adjust width for column alignment */
+}
+
+.header span:nth-child(6),
+.taskitem span:nth-child(6) {
+  width: 15%; /* Adjust width for column alignment */
+  text-align: center; /* Center text in action column */
+}
+
+.taskitem button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.taskitem button:hover {
+  background-color: #0056b3;
+}
+
+.search {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
